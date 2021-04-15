@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://lab.radioking.io:infra/hetzner-bootstrap/ax41-proxmox/hetzner-postinstall.sh
+wget https://raw.github.com/adeleglise/hetzner-bootstrap/ax41-proxmox/hetzner-postinstall.sh
 chmod 755 hetzner-postinstall.sh
 echo "${SERVERNAME}" | egrep '^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$' || VALIDHOSTNAME="false"
 if [[ -n "$VALIDHOSTNAME" ]]; then
