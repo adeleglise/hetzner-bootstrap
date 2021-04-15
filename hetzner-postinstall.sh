@@ -14,4 +14,4 @@ echo "samba-common samba-common/dhcp boolean false" | debconf-set-selections
 echo "samba-common samba-common/do_debconf boolean true" | debconf-set-selections
 echo "postfix postfix/mailname string ${SERVERNAME}" | debconf-set-selections
 echo "postfix postfix/main_mailer_type string 'Internet Site'" | debconf-set-selections
-apt -y install proxmox-ve open-iscsi
+apt -y install proxmox-ve open-iscsi ifupdown2
