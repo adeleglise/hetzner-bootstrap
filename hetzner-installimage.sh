@@ -6,5 +6,5 @@ if [[ -n "$VALIDHOSTNAME" ]]; then
   echo "the provided SERVERNAME '${SERVERNAME}' is either invalid or empty"
   exit 1
 else
-  /root/.oldroot/nfs/install/installimage -a -p /boot:ext3:1G,lvm:vg0:all -v vg0:root:/:ext4:20G,vg0:swap:swap:swap:8G -r yes -l 1 -b grub -d nvme0n1,nvme1n1 -i /root/.oldroot/nfs/install/../images/Debian-buster-latest-amd64-base.tar.gz -x hetzner-postinstall.sh -n ${SERVERNAME}
+  /root/.oldroot/nfs/install/installimage -a -p /boot:ext3:1G,lvm:vg0:all -v vg0:root:/:ext4:20G,vg0:swap:swap:swap:8G -r yes -l 1 -b grub -d nvme0n1,nvme1n1 -i /root/.oldroot/nfs/install/../images/Debian-1101-bullseye-amd64-base.tar.gz -x hetzner-postinstall.sh -n ${SERVERNAME}
 fi
